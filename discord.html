@@ -1,36 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DISCORD</title>
+    <title>Discord</title>
+    <link rel="stylesheet" href="discord.css">
 </head>
-<style>
-    body {
-        background-color: rgb(150, 152, 154);
-    }
-</style>
 <body>
-       <nav>
-        <img src="assets/logo.svg" alt="DISCORD">
-         <a href="#">Baixar</a>
-         <a href="#">Link</a>
-         <a href="#">Segurança</a>
-         <a href="#">Suporte</a>
-         <button type="submit">Entrar</button>
-       </nav>
-       <header>
-           <h1>Imagine um lugar.....</h1>
-           <p>...onde você possa pertencer a um  clube escolar,um grupo de gamers,ou uma comunidade artística mundial. Onde você e alguns amigos podem passar um tempo juntos.Um lugar que torna fácil conversar todos os dias e socializar com  mais frequência.</p>
-           <button>
-                 <img src="assets/icone-download.svg" alt="" width="15">
-                <a href="#">Baixar para Mec</a>
-           </button>
-           <button><a href="#">Abra o discord em seu navegador</a></button>
+    <nav class="topbar">
+        <div class="nav-brand">
+            <img src="assets/logo.svg" alt="Discord">
+        </div>
 
-           <img src="assets/fundo.png" alt="Fundo">
-       </header>
+        <div class="nav-links">
+            <a href="#">Baixar</a>
+            <a href="#">Nitro</a>
+            <a href="#">Segurança</a>
+            <a href="#">Suporte</a>
+        </div>
 
+        <button class="btn-login" type="button">Entrar</button>
+    </nav>
 
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Imagine um lugar...</h1>
+            <p>...onde você possa pertencer a um clube escolar, um grupo de gamers ou uma comunidade artística mundial. Onde você e alguns amigos podem passar um tempo juntos. Um lugar que torna fácil conversar todos os dias e socializar com mais frequência.</p>
+        </div>
+
+        <div class="hero-actions">
+            <button class="btn-primary" type="button">
+                <img src="assets/icone-download.svg" alt="Download" width="15">
+                <a href="#">Baixar para Mac</a>
+            </button>
+            <button class="btn-secondary" type="button"><a href="#">Abra o Discord no navegador</a></button>
+        </div>
+
+        <img class="hero-image" src="assets/fundo.png" alt="Fundo do Discord">
+    </header>
+
+    <main class="features">
+        <section class="feature">
+            <img src="assets/grupo-estudo.svg" alt="Grupo de estudo">
+            <div class="feature-copy">
+                <h2>Crie um espaço controlado por convite onde você se sinta em casa</h2>
+                <p>Os servidores Discord são organizados em canais com tópicos para vocês colaborarem, compartilharem ou simplesmente falarem do dia sem entupir um chat geral.</p>
+            </div>
+        </section>
+
+        <section class="feature">
+            <img src="assets/canal-voz.svg" alt="Canal de voz">
+            <div class="feature-copy">
+                <h2>Aqui é fácil encontrar</h2>
+                <p>Entre no canal de voz quando estiver à toa. Amigos no mesmo servidor podem te ver e entrar imediatamente, sem nem ter que fazer a chamada.</p>
+            </div>
+        </section>
+
+        <section class="feature">
+            <img src="assets/membros.svg" alt="Grupo de membros">
+            <div class="feature-copy">
+                <h2>Para poucos e para muitos</h2>
+                <p>Organize qualquer comunidade com ferramentas de moderação e acesso personalizado a membros. Dê poderes especiais aos membros, monte canais privados e muito mais.</p>
+            </div>
+        </section>
+
+        <section class="feature">
+            <img src="assets/relaxando.svg" alt="Relaxando">
+            <div class="feature-copy">
+                <h2>Tecnologia de conexão confiável</h2>
+                <p>Voz e vídeo de baixa latência, para você conversar como se estivesse na mesma sala. Dê um joinha por vídeo, veja amigos transmitirem a jogatina do dia ou junte uma galera para desenhar na tela compartilhada.</p>
+            </div>
+        </section>
+    </main>
+
+    <aside class="cta">
+        <img src="assets/fundo-estrela.svg" alt="Fundo estrela">
+        <h3>Vamos começar sua jornada?</h3>
+        <button class="btn-primary" type="button">
+            <img src="assets/icone-download.svg" alt="Download" width="25">
+            <a href="#">Baixar para Mac</a>
+        </button>
+    </aside>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="brand-block">
+                    <h3>Imagine um lugar</h3>
+                    <select name="lingua" aria-label="Selecionar idioma">
+                        <option selected>Português-BR</option>
+                        <option value="english">English, USA</option>
+                        <option value="espanhol">Espanhol</option>
+                    </select>
+
+                    <div class="socials">
+                        <img src="assets/twitter.svg" alt="Twitter">
+                        <img src="assets/instagram.svg" alt="Instagram">
+                        <img src="assets/facebook.svg" alt="Facebook">
+                        <img src="assets/youtube.svg" alt="YouTube">
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div>
+                        <h3>Produtos</h3>
+                        <ul>
+                            <li><a href="#">Baixar</a></li>
+                            <li><a href="#">Nitro</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Empresa</h3>
+                        <ul>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Emprego</a></li>
+                            <li><a href="#">Marca</a></li>
+                            <li><a href="#">Sala de imprensa</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="#">Faculdade</a></li>
+                            <li><a href="#">Suporte</a></li>
+                            <li><a href="#">Segurança</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Comentários</a></li>
+                            <li><a href="#">Desenvolvedores</a></li>
+                            <li><a href="#">StreamKit</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Política</h3>
+                        <ul>
+                            <li><a href="#">Termos</a></li>
+                            <li><a href="#">Privacidade</a></li>
+                            <li><a href="#">Diretrizes</a></li>
+                            <li><a href="#">Reconhecimentos</a></li>
+                            <li><a href="#">Licenças</a></li>
+                            <li><a href="#">Moderação</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="brand-copy">
+                    <img src="assets/logo.svg" alt="Logo Discord">
+                    <button class="btn-register" type="button">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="discord.js"></script>
 </body>
 </html>
