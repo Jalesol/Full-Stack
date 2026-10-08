@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes & Pseudo elementos</title>
+
+    <style>
+        /* Pseudo classes : */
+        div:hover {
+            background-color: blue;
+        }
+        a:hover {
+           text-decoration: none;
+           background-color: green;
+        
+        }
+        /* Links não visitados*/
+
+        a:link {
+            color: gray
+        }
+        /* Links já visitados*/
+        a:visited {
+            color: red;
+        }
+        /* Links ativos */
+        a:active {
+            color: purple;
+        }
+        /*formulários*/ 
+
+        input:checked {
+            margin-left: 200px;
+        }
+        input:focus {
+            background-color: purple;
+        }
+       input:required {
+        border: 1px solid red;
+       }
+
+       /* Pseudo-elementos :: */
+
+       p::first-line {
+        color: blue;
+       }
+       P::first-letter {
+        font-size: 20px;
+       }
+       p::selection {
+        background-color: yellow;
+       } 
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quidem sint maiores. Blanditiis fugiat culpa, necessitatibus cupiditate facilis aliquam accusantium minus, ut sunt praesentium incidunt vitae fuga iure atque dicta.</p>
+
+    <div>
+        <h2>Conteúdo da Div</h2>
+    </div>
+    <h1>Conteúdo do h2</h1>
+
+    <a href="#">Google</a>
+     <a href="#">instagram</a>
+      <a href="#">Facebook</a>
+
+      <h2>Formulários</h2>
+      <input type="checkbox"> aceito <br>
+      <input type="radio" name="opcao">  sim <br>
+      <input type="text"  required ="Digite seu nome"> 
+</body>
+</html>

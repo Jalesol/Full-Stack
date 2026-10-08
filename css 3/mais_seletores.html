@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre seletores</title>
+
+    <style>
+       /* * {  seletor universal , seleciona todos elementos da página
+            border: 2px solid red;
+
+            h1 { seletor de texto/ único elemento
+            color : red;
+            }
+            .destaque {  seletor classe
+            color:red;
+            }
+            #vida {  seletor de id (tem que ser um por página)
+            color:red;
+            }
+            div>h1 { seleciona um filho direto da div
+            color:red;
+            }
+            div h1 { seleciona qualquer h1 que seja descedente
+            }
+            h1+p { seleciona o proxímo item p atras do h1
+            }
+            h1~p { seleciona todos os p após h1
+            }
+        } */
+
+        h1 {
+            color: green;
+        } 
+
+        h1+p {
+           border-top: 4px solid gray;
+        }
+        a {
+            background-color: purple;
+            color: white;
+        }
+        .destaque {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título da página</h1>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non dolore temporibus pariatur in commodi explicabo aspernatur voluptatibus minima atque quibusdam, tempore dolor ducimus alias eveniet excepturi illum rerum aliquid?</p>
+    <a href="#">Leia mais</a> - <a href="#">Gostei(10)</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat numquam tempora sapiente iste nemo voluptatibus quasi, nam nulla consequatur eius, a soluta culpa quidem amet accusamus atque molestias aliquam ipsa.</p>
+
+    <h2>Subtítulo da página</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non dolore temporibus pariatur in commodi explicabo aspernatur voluptatibus minima atque quibusdam, tempore dolor ducimus alias eveniet excepturi illum rerum aliquid?</p>
+    <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat numquam tempora sapiente iste nemo voluptatibus quasi, nam nulla consequatur eius, a soluta culpa quidem amet accusamus atque molestias aliquam ipsa.</p>
+</body>
+</html>
