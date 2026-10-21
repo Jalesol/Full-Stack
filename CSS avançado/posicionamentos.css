@@ -1,0 +1,39 @@
+#secundaria {
+    background-color: blue;
+    padding: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#primaria {
+    background-color: white;
+    width: 700px;
+    margin: 1em auto;
+    padding: 0.8em;
+    position: relative;
+}
+
+.novo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.chat {
+    background-color: violet;
+    width: 150px;
+    height: 200px;
+    padding: 0.5em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+body {
+    background-color: rgba(9, 137, 223, 0.541);
+    margin: 0;
+    padding: 0;
+}
