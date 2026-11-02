@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreposição</title>
+
+    <style>
+     
+        .caixa1 {
+            border: 1px solid red;
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            z-index: 4;
+        }
+
+           .caixa2 {
+            border: 1px solid red;
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            z-index: 5;
+            left: 90px;
+        }
+
+           .caixa3{
+            border: 1px solid red;
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            z-index: 0;
+            left: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa1">
+        caixa 1
+    </div>
+
+    <div class="caixa2">
+        caixa 2 
+    </div>
+
+    <div class="caixa3">
+        caixa 3
+    </div>
+</body>
+</html>
